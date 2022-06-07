@@ -23,7 +23,5 @@ An overview of the scripts in the repository and what they do.
 `Checks an input number for whether it's odd or even using the modulus operator`
 - [OverlapLists](https://github.com/BarrelrollBob/Snippets/blob/main/OverlapLists.py)
 `Generates two random arrays: loops through one of them and compares each index with the elements of the other. If the values are 'equal' or 'duplicate', append the value to another array`
-- [TkinterTest](https://github.com/BarrelrollBob/Snippets/blob/main/TkinterTest.py)
-`A teensy bit of fooling around with Tkinter (python framework for creating GUIs)`
 - [SearchUsername](https://github.com/BarrelrollBob/Snippets/blob/main/SearchUsername.py)
 `Function that takes a string input, searches a file for matches and returns whether the file contains the string or not`
