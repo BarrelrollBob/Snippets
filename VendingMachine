@@ -16,7 +16,7 @@
 // For example: if the order is [Crisps1, Lasagna2, Pizza3, Water4], have it be [Pizza1, Lasagna2, Crisps3, Water4] instead. Food > Snack > Drink. Have it sort again when an item is added.
 // TODO: Show items you can afford  
 
-namespace VendingMachine.Classes
+namespace VendingMachine
 {
     public class Program
     {
@@ -248,4 +248,19 @@ namespace VendingMachine.Classes
             }
         }
     }
+
+    public class Items
+    {
+        public string? Name { get; set; }
+        public int? ItemNumber { get; set; }
+
+        public int? ItemCost { get; set; } 
+        public Items (string? name, int? itemNumber, int? itemCost)
+        {
+            Name = name;
+            ItemNumber = itemNumber;
+            ItemCost = itemCost;
+        }  
+    }
 }
+
