@@ -9,7 +9,7 @@ An overview of the scripts in the repository and what they do.
 
 - [VendingMachine](https://github.com/BarrelrollBob/Small-programs/blob/main/VendingMachine)
 `Vending machine WPF application in C#. Has a number of items (objects) stored in arrays - 
-Can delete input, and if the input is prefixed with '#', insert that amount of money. You need money inserted to be able to buy an item. Can't be broken (I think).
+Can delete input, and if the input is prefixed with '#', insert that amount of money. You need money inserted to be able to buy an item. Can't be broken (I think).`
 
 - [CheckDivisors](https://github.com/BarrelrollBob/Snippets/blob/main/CheckDivisors.py)
 `Lists every divisor of a user defined number`
