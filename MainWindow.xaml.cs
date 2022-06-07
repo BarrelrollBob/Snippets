@@ -1,17 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace VendingMachine
 {
@@ -20,8 +8,11 @@ namespace VendingMachine
     /// </summary>
     public partial class MainWindow : Window
     {
+        // defines input
         string keyNum = "";
+        // variable where amount of money inserted in the machine is stored
         int? balance = 0;
+        // keyNum parsed to string (minus #)
         int num = 0;
 
         public Foods[] foodItem = new Foods[]
@@ -136,27 +127,32 @@ namespace VendingMachine
         {
             bool canParse = int.TryParse(keyNum, out int number);
             num = number;
-            if (keyNum == "") txtblckTerminal.Text = "Input a number: \n";
-
+            
+            // If keyNum can be parsed to an int, call getItem():
+            if (canParse) getItem();
+            
+            // initiator for setBalance() - if the first char in keyNum == #, parse 'keyNum'
+            // to 'num', minus the '#':
             else if (keyNum[0] == '#')
             {
                 string helper = "";
                 char[] keyArray = keyNum.ToCharArray();
-                for (int i = 1; i < keyArray.Length; i++)
-                {
-                    helper += keyArray[i];
-                }
-            
+                
+                for (int i = 1; i < keyArray.Length; i++) helper += keyArray[i];
+                
                 bool canParseHelper = int.TryParse(helper, out int helperNum);
+                // if helper THEN can be parsed (if it doesn't contain '#' in it
+                // somewhere)
                 if (canParseHelper)
                 {
-                    num = Convert.ToInt32(helperNum);
+                    num = Convert.ToInt32(helperNum); // Already int, not sure why I'm casting
                     setBalance();
                 }
                 else txtblckTerminal.Text = "Sorry, that's not a valid input.";
                 
             }
-            else if (canParse) getItem();
+            
+            else if (keyNum == "") txtblckTerminal.Text = "Input a number: \n";
 
             else txtblckTerminal.Text = "Sorry, that's not a valid input.";
 
@@ -194,20 +190,21 @@ namespace VendingMachine
         // Loops through each Object array searching for an item - if the item doesn't exist, write error message:
         public void getItem()
         {
-
             int i = 0;
-
 
             foreach (var item in foodItem)
             {
+                // if num is == current item.ItemNumber:
                 if (num == item.ItemNumber)
                 {
+                    // then if your balance is < 0, error message:
                     if (balance - item.ItemCost < 0)
                     {
                         txtblckTerminal.Text = ($"Sorry, you can't afford this item. Insert money into the machine to complete the purchase. Your current balance is: {balance}.");
                         keyNum = "";
                         break;
                     }
+                    // else if your {balance - num} is greater than 0, buy the item (num is the input parsed to int):
                     else if (balance - item.ItemCost >= 0)
                     {
                         balance -= item.ItemCost;
@@ -217,7 +214,7 @@ namespace VendingMachine
                     }
                 }
                 else 
-                {
+                { 
                     i++;
                 }
             }
@@ -270,6 +267,7 @@ namespace VendingMachine
             }
 
             // Instead of having the message below printed 9 times, have some logic ensure that if the loop ever runs to completion without getting a match, display the message once:
+            // if i == 9 in this case since we have 9 objects)
             if (i == foodItem.Length + snackItem.Length + drinkItem.Length)
             {
                 txtblckTerminal.Text = ($"Sorry, no item matching number: '{num}' exists.");
@@ -282,6 +280,50 @@ namespace VendingMachine
         {
             if (num + balance > 1000) txtblckTerminal.Text = ($"Your balance cannot exceed 1000. Your current balance is: {balance}");
             else txtblckTerminal.Text = ($"The money has been inserted, your balance is now: {Convert.ToString(balance += num)}.");
+        }
+    }
+    
+    public class Items
+    {
+        public string? Name { get; set; }
+        public int? ItemNumber { get; set; }
+        public int? ItemCost { get; set; }
+
+        public static int? balance = 0;
+        public Items(string? name, int? itemNumber, int? itemCost)
+        {
+            Name = name;
+            ItemNumber = itemNumber;
+            ItemCost = itemCost;
+        }
+    }
+    
+    public class Foods : Items
+    {
+        public bool IsFood { get; set; }
+        public Foods(string? name, int? itemNumber, int? itemCost, bool isFood) : base(name, itemNumber, itemCost)
+        {
+            IsFood = isFood;
+        }
+    }
+    
+    public class Snacks : Items
+    {
+        public bool IsSnack { get; set; }
+        public Snacks(string? name, int? itemNumber, int? itemCost, bool isSnack) :
+            base(name, itemNumber, itemCost)
+        {
+            IsSnack = isSnack;
+        }
+    }
+    
+    public class Drinks : Items
+    {
+        public bool IsDrink { get; set; }
+
+        public Drinks(string? name, int? itemNumber, int? itemCost, bool isDrink) : base(name, itemNumber, itemCost)
+        {
+            IsDrink = isDrink;
         }
     }
 }
