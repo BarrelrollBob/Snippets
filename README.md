@@ -7,7 +7,7 @@ The purpose of this repository is to be the dumping grounds for various small sn
 ### A quick overview
 An overview of the scripts in the repository and what they do. 
 
-- [VendingMachine]()
+- [VendingMachine](https://github.com/BarrelrollBob/Small-programs/blob/main/VendingMachine)
 `Vending machine WPF application in C#. Has a number of items (objects) stored in arrays - 
 Can delete input, and if the input is prefixed with '#', insert that amount of money. You need money inserted to be able to buy an item. Can't be broken (I think).
 
