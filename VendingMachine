@@ -253,5 +253,34 @@ namespace VendingMachine
             ItemCost = itemCost;
         }  
     }
+    // 3 following classes are arbitrary and for inheritance practice
+     public class Snacks : Items
+    {
+        public bool IsSnack { get; set; }
+        public Snacks(string? name, int? itemNumber, int? itemCost, bool isSnack) : 
+            base(name, itemNumber, itemCost)
+        {
+            IsSnack = isSnack;
+        }
+    }
+    
+    public class Drinks : Items
+    {
+        public bool IsDrink { get; set; }
+
+        public Drinks(string? name, int? itemNumber, int? itemCost, bool isDrink) : base(name, itemNumber, itemCost)
+        {
+            IsDrink = isDrink;
+        }        
+    }
+    
+    public class Foods : Items
+    {
+        public bool IsFood { get; set; }
+        public Foods(string? name, int? itemNumber, int? itemCost, bool isFood) : base(name, itemNumber, itemCost)
+        {
+            IsFood = isFood;
+        }
+    }
 }
 
