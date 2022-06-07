@@ -54,15 +54,6 @@ namespace VendingMachine
             
             while (state)
             {
-                string pleb = "";
-                string helper = "hello";
-                char[] keyArray = helper.ToCharArray();
-                for (int i = 0; i < keyArray.Length - 1; i++)
-                {
-                    pleb += Convert.ToString(keyArray[i]);
-                }
-
-                Console.WriteLine(pleb);
                 string? userInput = Console.ReadLine();
 
                 if (userInput == "getAll") getAllItems();
