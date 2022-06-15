@@ -1,6 +1,6 @@
 ### What this is for
 
-The purpose of this repository is to be the dumping grounds for various small snippets of code / small projects I've done for practice for exploration and/or out of curiosity. I'm drawing inspiration from sites like [freeCodeCamp](https://www.freecodecamp.org/news/python-projects-for-beginners/) and [Practice Python](https//:www.practicepython.org).
+The purpose of this repository is to be the dumping grounds for various small snippets of code / small projects I've done for practice, for exploration and/or out of curiosity. I'm drawing inspiration from sites like [freeCodeCamp](https://www.freecodecamp.org/news/python-projects-for-beginners/) and [Practice Python](https//:www.practicepython.org).
 
 ---
 
