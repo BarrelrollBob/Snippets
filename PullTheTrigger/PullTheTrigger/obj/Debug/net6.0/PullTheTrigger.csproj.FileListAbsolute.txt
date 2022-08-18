@@ -1,0 +1,15 @@
+C:\Users\s-nis\My things\Coding\School\PullTheTrigger\PullTheTrigger\bin\Debug\net6.0\PullTheTrigger.exe
+C:\Users\s-nis\My things\Coding\School\PullTheTrigger\PullTheTrigger\bin\Debug\net6.0\PullTheTrigger.deps.json
+C:\Users\s-nis\My things\Coding\School\PullTheTrigger\PullTheTrigger\bin\Debug\net6.0\PullTheTrigger.runtimeconfig.json
+C:\Users\s-nis\My things\Coding\School\PullTheTrigger\PullTheTrigger\bin\Debug\net6.0\PullTheTrigger.dll
+C:\Users\s-nis\My things\Coding\School\PullTheTrigger\PullTheTrigger\bin\Debug\net6.0\PullTheTrigger.pdb
+C:\Users\s-nis\My things\Coding\School\PullTheTrigger\PullTheTrigger\obj\Debug\net6.0\PullTheTrigger.csproj.AssemblyReference.cache
+C:\Users\s-nis\My things\Coding\School\PullTheTrigger\PullTheTrigger\obj\Debug\net6.0\PullTheTrigger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\s-nis\My things\Coding\School\PullTheTrigger\PullTheTrigger\obj\Debug\net6.0\PullTheTrigger.AssemblyInfoInputs.cache
+C:\Users\s-nis\My things\Coding\School\PullTheTrigger\PullTheTrigger\obj\Debug\net6.0\PullTheTrigger.AssemblyInfo.cs
+C:\Users\s-nis\My things\Coding\School\PullTheTrigger\PullTheTrigger\obj\Debug\net6.0\PullTheTrigger.csproj.CoreCompileInputs.cache
+C:\Users\s-nis\My things\Coding\School\PullTheTrigger\PullTheTrigger\obj\Debug\net6.0\PullTheTrigger.dll
+C:\Users\s-nis\My things\Coding\School\PullTheTrigger\PullTheTrigger\obj\Debug\net6.0\refint\PullTheTrigger.dll
+C:\Users\s-nis\My things\Coding\School\PullTheTrigger\PullTheTrigger\obj\Debug\net6.0\PullTheTrigger.pdb
+C:\Users\s-nis\My things\Coding\School\PullTheTrigger\PullTheTrigger\obj\Debug\net6.0\PullTheTrigger.genruntimeconfig.cache
+C:\Users\s-nis\My things\Coding\School\PullTheTrigger\PullTheTrigger\obj\Debug\net6.0\ref\PullTheTrigger.dll
