@@ -1,15 +1,19 @@
 ### What this is for
 
-The purpose of this repository is to be the dumping grounds for various small snippets of code / small projects I've done for practice, for exploration and/or out of curiosity. I'm drawing inspiration from sites like [freeCodeCamp](https://www.freecodecamp.org/news/python-projects-for-beginners/) and [Practice Python](https//:www.practicepython.org).
+The purpose of this repository is to be the dumping grounds for various small snippets of code / small projects I've done for practice, for exploration and/or out of curiosity.
 
 ---
 
 ### A quick overview
 An overview of the scripts in the repository and what they do. 
 
+- [RPG_Game]
+`The game has you enter a name on starting up (if a name isn't input, resort to a default value). The code then enters into loop, where you have 
+the options to 1: enter a shop, 2: fight in a battleground, 3: quit the game.`
+
 - [VendingMachine](https://github.com/BarrelrollBob/Small-programs/blob/main/VendingMachine)
 `Vending machine WPF application in C#. Has a number of items (objects) stored in arrays - 
-Can delete input, and if the input is prefixed with '#', insert that amount of money. You need money inserted to be able to buy an item. Can't be broken (I think).`
+Can delete input, and if the input is prefixed with '#', insert that amount of money. You need money inserted to be able to buy an item.`
 
 - [CheckDivisors](https://github.com/BarrelrollBob/Snippets/blob/main/CheckDivisors.py)
 `Lists every divisor of a user defined number`
