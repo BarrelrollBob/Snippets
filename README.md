@@ -8,7 +8,7 @@ The purpose of this repository is to be the dumping grounds for various small sn
 An overview of the scripts in the repository and what they do. 
 
 - [PullTheTriggerGame]()
-``
+`Best of three - counts down from 10, stops at a random count, at which point you have to press a button within a grace period or you lose the round.`
 
 - [RPG_Game](https://github.com/Sornis/Small_programs/tree/main/RPGGame/RPGGame)
 `The game has you enter a name on starting up (if a name isn't input, resort to a default value). The code then enters into loop, where you have 
