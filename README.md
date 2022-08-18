@@ -7,6 +7,9 @@ The purpose of this repository is to be the dumping grounds for various small sn
 ### A quick overview
 An overview of the scripts in the repository and what they do. 
 
+- [PullTheTriggerGame]()
+``
+
 - [RPG_Game](https://github.com/Sornis/Small_programs/tree/main/RPGGame/RPGGame)
 `The game has you enter a name on starting up (if a name isn't input, resort to a default value). The code then enters into loop, where you have 
 the options to 1: enter a shop, 2: fight in a battleground, 3: quit the game.`
