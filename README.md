@@ -18,6 +18,9 @@ the options to 1: enter a shop, 2: fight in a battleground, 3: quit the game.`
 `Vending machine WPF application in C#. Has a number of items (objects) stored in arrays - 
 Can delete input, and if the input is prefixed with '#', insert that amount of money. You need money inserted to be able to buy an item.`
 
+- [SearchUsername](https://github.com/BarrelrollBob/Snippets/blob/main/SearchUsername.py)
+`Function that takes a string input, searches a file for matches and returns whether the file contains the string or not`
+
 - [CheckDivisors](https://github.com/BarrelrollBob/Snippets/blob/main/CheckDivisors.py)
 `Lists every divisor of a user defined number`
 - [CheckYesNo](https://github.com/BarrelrollBob/Snippets/blob/main/CheckYesNo.py)
@@ -34,5 +37,3 @@ Can delete input, and if the input is prefixed with '#', insert that amount of m
 `Checks an input number for whether it's odd or even using the modulus operator`
 - [OverlapLists](https://github.com/BarrelrollBob/Snippets/blob/main/OverlapLists.py)
 `Generates two random arrays: loops through one of them and compares each index with the elements of the other. If the values are 'equal' or 'duplicate', append the value to another array`
-- [SearchUsername](https://github.com/BarrelrollBob/Snippets/blob/main/SearchUsername.py)
-`Function that takes a string input, searches a file for matches and returns whether the file contains the string or not`
