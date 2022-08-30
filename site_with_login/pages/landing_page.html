@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel = "stylesheet" href = "../styles/landing_page.css">
+    </head>
+    <body>
+
+        <div>
+            <img src="../images/default_image.jpg">
+            <div id = "user">
+                <div id = "userInfo">
+                    <p>Username</p>
+                    <p>E-mail</p>
+                </div>
+                <p id = "editButton">Edit page</p>
+            </div>
+            <div id = "userOptions">
+                <form>
+                    <input id = "headlineInput" placeholder = "Type your headline" ><br>
+                    <input id = "textInput" placeholder = "Type your text"><br>
+                    <input id = "color" type = "color"><br>
+                </form>
+            </div>
+            <h1>Welcome to your page!</h1>
+            <p>It's yours to do what you want with!</p>
+        </div>
+
+        <script>
+            
+            const userMenu = document.querySelector("#user");
+            const userOptions = document.querySelector("#userOptions");
+            const imageButton = document.querySelector("img");
+            const editButton = document.querySelector("#editButton");
+            var isDisplayed = false;
+
+            imageButton.addEventListener("click", () => {
+                displayElement(userMenu, isDisplayed);
+                isDisplayed = displayCheck(isDisplayed);
+            });
+            editButton.addEventListener("click", () => {
+                displayElement(userOptions, isDisplayed);
+                isDisplayed = displayCheck(isDisplayed);
+            });
+
+            function displayCheck(checkTrue) {
+                if(!checkTrue) return checkTrue = true;
+                else return checkTrue = false; 
+            }
+
+            function displayElement(element, checkTrue) {
+                !checkTrue ? element.style.display = "block" : element.style.display = "none";
+            }
+
+        </script>
+    </body>
+</html>
