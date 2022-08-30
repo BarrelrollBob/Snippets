@@ -7,6 +7,9 @@ The purpose of this repository is to be the dumping grounds for various small sn
 ### A quick overview
 An overview of the scripts in the repository and what they do. 
 
+- [siteWithLogin]()
+`Website strictly for learning PHP and mySQL. Has sign-up, login and a landing page. Users are created and stored in an SQL database from signed form data. When logging in, the database is checked for the input credentials. Landing page is a user-specific site where a given user can type in text and change the background colour, updating their personal site.`
+
 - [PullTheTriggerGame]()
 `Best of three - counts down from 10, stops at a random count, at which point you have to press a button within a grace period or you lose the round.`
 
