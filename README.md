@@ -1,11 +1,14 @@
 ### What this is for
 
-The purpose of this repository is to be the dumping grounds for various small snippets of code / small projects I've done for practice, for exploration and/or out of curiosity.
+The purpose of this repository is to be the dumping grounds for various small snippets of code / small projects I've done for practice and out of curiosity.
 
 ---
 
 ### A quick overview
 An overview of the scripts in the repository and what they do. 
+
+- [mailAndAccountExtension](https://github.com/Sornis/Small_programs/tree/main/Mail%20and%20account%20checker%20extension)
+`Is supposed to track websites you're signed up as a user on using Chrome's APIs. Doesn't do that yet`
 
 - [siteWithLogin](https://github.com/Sornis/Small_programs/tree/main/site_with_login)
 `Website strictly for learning PHP and mySQL. Has sign-up, login and a landing page. Users are created and stored in an SQL database from signed form data. When logging in, the database is checked for the typed in credentials. Landing page is a user-specific site where a given user can type in text and change the background colour, updating their personal site.`
