@@ -1,0 +1,25 @@
+{
+    "name": "Something",
+    "description": "Something",
+    "version": "1.0",
+    "manifest_version": 3,
+
+    "background": {
+        "service_worker": "background.js"
+    },
+    
+    "permissions": [
+        "tabs",
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ],
+
+    "action": {
+        "default_title": "Smth",
+	    "default_popup": "popup.html"
+    }
+}
